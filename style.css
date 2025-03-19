@@ -1,0 +1,403 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     min-height: 100vh;
+     background-image: url(christopher-gower-m_HRfLhgABo-unsplash.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+
+   
+     nav {
+        background-color: rgb(42, 44, 42);
+        box-shadow: 3px 3px 4px 3px;
+        position: sticky; 
+        top: 0; 
+        z-index: 1000; 
+      }
+ 
+
+ nav ul {
+     width: 100%;
+     list-style: none;
+     display: flex;
+     justify-content: flex-end;
+     height: 65px;
+ }
+
+ nav li {
+     height: 55px;
+ }
+
+ nav a, h2 {
+     height: 100%;
+     padding: 30px;
+     text-decoration: none;
+     display: flex;
+     align-items: center;
+     color: white;
+ }
+ .horizontal:hover{
+    background-color: rgb(66, 75, 66);
+    font-family: 'Times New Roman', Times, serif;
+
+ }
+
+ nav a:hover ,nav h2:hover{
+     background-color: rgb(36, 39, 36);
+     border: 2px rgb(45, 51, 47) solid;
+     border-radius: 4px;
+     color: white;
+   
+ }
+ 
+
+
+ nav li:first-child {
+     margin-right: auto;
+ }
+
+
+ .drop-down {
+
+     position: fixed;
+     height: 100vh;
+     top: 0;
+     right: 0;
+     width: 250px;
+     z-index: 999;
+     display: none;
+     background-color: rgba(255, 255, 255, 0.568);
+     backdrop-filter: blur(10px);
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+
+ }
+
+ .drop-down li, a {
+     width: 100%;
+     height: 80px;
+ }
+ .menu {
+     display: none;
+ }
+
+.menu a img{
+  color: white;
+}
+
+ .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+ 
+   
+ }
+ .home div{
+       height: 100px;
+       width: 50%;
+       background-color: rgba(255, 255, 255, 0.568);
+       backdrop-filter: blur(100px);
+ }
+
+
+
+  
+
+  .home-section {
+    height: 100vh; 
+    background-image:url('photo_2023-06-27_01-00-14.jpg'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .home-content {
+    max-width: 800px;
+    background-color: transparent;
+     backdrop-filter: blur(25px);
+  
+  }
+  
+  .home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: flex;
+    text-align: center;
+    display: inline-block;
+    padding: 26px 30px;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+ 
+   
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+
+  }
+  
+  
+  @media (max-width: 768px) {
+    .home-content h1 {
+      font-size: 2rem;
+      
+    }
+  
+    .home-section{
+      height: 50vh;
+      text-align: center;
+     
+    }
+  
+    .home-content p {
+      font-size: 1.2rem;
+    }
+    .home-section a, .about-section a{
+      display: flex;
+      align-items: center; /* Vertically centers the content */
+      justify-content: center; /* Horizontally centers the content */
+      height: 100%;
+     
+    }
+  
+    .cta-button {
+      font-size: 1.1rem;
+      padding: 17px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .home-content p {
+      font-size: 1rem;
+    }
+    .home-content a {
+      font-size: 1.3rem;
+    }
+  
+    .cta-button {
+      font-size: 0.9rem;
+      padding: 6px 15px;
+    }
+  }
+
+
+
+
+
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); 
+}
+
+.about-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+  flex: 1;
+  max-width: 50%;
+  padding: 0 20px;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+
+/* Contact Section */
+.contact-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e3e6e9, #bdc3c7);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 50px;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-5px);
+  background-color: #34495e;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.social-link i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.social-link span {
+  font-size: 1.1rem;
+}
+
+/* Social Media Colors */
+.linkedin { background-color:  #0088cc;}
+.github { background-color: #0088cc; }
+.telegram { background-color:  #0088cc; }
+.twitter { background-color:  #0088cc; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-links {
+      grid-template-columns: 1fr;
+  }
+  
+  .contact-container h2 {
+      font-size: 2rem;
+  }
+  
+  .contact-container p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image, .about-content {
+    max-width: 100%;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.8rem;
+    padding: 6px 15px;
+  }
+}
+
+
+/* 
+//allionone */
+
+ @media(max-width:700px) {
+     .fordesktop {
+         display: none;
+     }
+     .menu {
+         display: block;
+     }
+ }
+ @media(max-width:400px) {
+     .drop-down {
+         width: 100%;
+     }
+ }
+
+
+
+
+

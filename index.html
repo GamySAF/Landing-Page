@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polygin Tech Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="horizontal">
+            <li>
+                <h2>Gamy Tech</h2>
+            </li>
+            <li> <a class="fordesktop" href="#home">Home</a></li>
+            <li> <a class="fordesktop" href="#">About</a></li>
+            <li> <a class="fordesktop" href="#">Contact</a></li>
+            
+            <li class="menu" onclick=showdropdown() id="showdropdowns"> <a href="#"><img
+                        src="menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    </a>
+                </li>
+        </ul>
+
+        <ul id="drop-down" class="drop-down">
+
+            <li onclick=hidedropdown()> <a><img src="close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" width="30"
+                        height="23" alt="">Exit </a>
+
+            </li>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">Contact</a></li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Services</a></li>
+            <li> <a href="#">Report</a></li>
+
+        </ul>
+    </nav>
+
+    <section class="home-section">
+        <div class="home-content">
+          <h1>Welcome to Gamy Tech</h1>
+
+          <p>Your success is our priority. Let's build something amazing together!</p>
+          <a href="#" class="cta-button">Get Started</a>
+        </div>
+      </section>
+
+            <section> 
+                
+            </section>
+      <section class="about-section">
+        <div class="about-image">
+          <img src="developer-8829711_1920.jpg" alt="About Us Image">
+        </div>
+        <div class="about-content">
+          <h2>About Us</h2>
+          <p>We are a team of passionate developers dedicated to creating amazing web experiences. Join us on this journey!</p>
+          <a href="#" class="cta-button">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+<section class="contact-section">
+  <div class="contact-container">
+      <h2>Connect With Us</h2>
+      <p>Follow us on social media for updates and support</p>
+      
+      <div class="social-links">
+          <a href="#" class="social-link linkedin" target="_blank">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+          </a>
+          <a href="#" class="social-link github" target="_blank">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+          </a>
+          <a href="#" class="social-link telegram" target="_blank">
+              <i class="fab fa-telegram"></i>
+              <span>Telegram</span>
+          </a>
+          <a href="#" class="social-link twitter" target="_blank">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+          </a>
+      </div>
+  </div>
+</section>
+
+    <script>
+        function showdropdown() {
+            const dropdown = document.querySelector('.drop-down')
+            dropdown.style.display = 'flex'
+        }
+        function hidedropdown() {
+            const dropdown = document.querySelector('.drop-down')
+            dropdown.style.display = 'none'
+        }
+
+
+    </script>
+
+</body>
+
+</html>
